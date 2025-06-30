@@ -7,6 +7,7 @@
 #include "util.h"
 #include "sha3_cpu.h"
 #include "sha3_gpu.h"
+#include <limits>
 
 namespace
 {
