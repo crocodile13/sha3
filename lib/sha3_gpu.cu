@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <cassert>
 #include <limits>
+#include <stdexcept>
 
 namespace
 {
