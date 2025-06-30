@@ -19,6 +19,7 @@ Also [CLI11](https://github.com/CLIUtils/CLI11) submodule is used as an auxiliar
 ./docker-run.sh -e -t 256 -f /data/file.bin
 echo -n "toto" | ./docker-run.sh -e -t 256 -
 ```
+
 ## How to test
 For building tests, [GTest](https://github.com/google/googletest) framework is required.
 In order to check tests, run test executable.
