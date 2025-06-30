@@ -13,6 +13,12 @@ All projects require compiler with full C++17 support, CUDA and OpenMP.
 Also [CLI11](https://github.com/CLIUtils/CLI11) submodule is used as an auxiliary library.
 
 ## Build and run project example
+git submodule init
+git submodule update
+mkdir build && cd build
+cmake ..
+
+## Build and run project example with docker
 ```
 ./docker-run.sh -b
 ./docker-run.sh -e --help
