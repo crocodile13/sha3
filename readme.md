@@ -1,6 +1,6 @@
 # SHA-3 calculation
 
-This project includes cpu and gpu (CUDA) high performance SHA3 hash calculation.
+This project includes cpu and gpu (CUDA) high performance SHA3 hash calculation usable with docker.
 Project consists of 4 subprojects:
 * library - the core of other projects
 * sha-3 single hash calculation
@@ -12,14 +12,12 @@ Project consists of 4 subprojects:
 All projects require compiler with full C++17 support, CUDA and OpenMP.
 Also [CLI11](https://github.com/CLIUtils/CLI11) submodule is used as an auxiliary library.
 
-## Build project example
+## Build and run project example
 ```
-git clone https://github.com/skapix/sha3.git
-cd sha3
-git submodule init
-git submodule update
-mkdir build && cd build
-cmake ..
+./docker-run.sh -b
+./docker-run.sh -e --help
+./docker-run.sh -e -t 256 -f /data/file.bin
+echo -n "toto" | ./docker-run.sh -e -t 256 -
 ```
 ## How to test
 For building tests, [GTest](https://github.com/google/googletest) framework is required.
