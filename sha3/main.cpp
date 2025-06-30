@@ -7,6 +7,7 @@
 #include "util.h"
 #include "sha3_cpu.h"
 #include "sha3_gpu.h"
+#include <limits>
 
 template<typename T>
 std::vector<uint8_t> doCalculation(std::istream &is, size_t digestSize, size_t bufSize)
