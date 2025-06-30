@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cuda.h>
-
+#include <cstdio>
 
 static const char *_cudaGetErrorEnum(cudaError_t error)
 {
